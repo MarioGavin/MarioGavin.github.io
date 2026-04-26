@@ -2,183 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Technical Gameplay Designer</title>
-    <style>
-        :root {
-            --bg-color: #0b0b0b;
-            --card-bg: #161616;
-            --primary-accent: #e30613; /* CDPR Red */
-            --text-main: #f0f0f0;
-            --text-dim: #a0a0a0;
-            --white: #ffffff;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
-
-        /* Header & Hero */
-        header {
-            padding: 100px 0 60px 0;
-            border-bottom: 1px solid #333;
-            background: linear-gradient(to bottom, #1a1a1a, var(--bg-color));
-        }
-
-        h1 { font-size: 3.5rem; margin: 0; letter-spacing: -1px; color: var(--white); }
-        .tagline { color: var(--primary-accent); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 1.1rem; }
-        .contacts { margin-top: 20px; font-size: 0.9rem; }
-        .contacts a { color: var(--text-dim); text-decoration: none; margin-right: 20px; border-bottom: 1px solid transparent; transition: 0.3s; }
-        .contacts a:hover { color: var(--primary-accent); border-bottom: 1px solid var(--primary-accent); }
-
-        /* Section Styling */
-        section { padding: 80px 0; border-bottom: 1px solid #222; }
-        h2 { font-size: 2rem; margin-bottom: 40px; color: var(--white); display: flex; align-items: center; }
-        h2::after { content: ""; flex: 1; height: 1px; background: #333; margin-left: 20px; }
-
-        /* Bio */
-        .bio-text { font-size: 1.2rem; color: var(--text-dim); max-width: 800px; }
-
-        /* Grid for Skills */
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-        .skill-category h3 { color: var(--primary-accent); font-size: 1rem; text-transform: uppercase; }
-        .skill-list { list-style: none; padding: 0; color: var(--text-dim); }
-        .skill-list li { margin-bottom: 10px; display: flex; align-items: center; }
-        .skill-list li::before { content: "▹"; color: var(--primary-accent); margin-right: 10px; }
-
-        /* Project Cards */
-        .project-card {
-            background: var(--card-bg);
-            border-radius: 8px;
-            padding: 40px;
-            margin-bottom: 50px;
-            border: 1px solid #222;
-            transition: transform 0.3s ease;
-        }
-        .project-card:hover { transform: translateY(-5px); border-color: #444; }
-        .project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
-        .project-title { font-size: 1.8rem; font-weight: 800; color: var(--white); margin: 0; }
-        .tech-tags { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
-        .tag { background: #333; color: #ccc; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
-
-        .project-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; }
-        .project-description h4 { color: var(--primary-accent); margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; }
-        .project-description p { font-size: 1rem; color: var(--text-dim); margin-top: 0; }
-
-        @media (max-width: 768px) {
-            .project-content { grid-template-columns: 1fr; }
-            h1 { font-size: 2.5rem; }
-        }
-
-        footer { padding: 60px 0; text-align: center; color: #444; font-size: 0.8rem; }
+    <title>Mario Gavín Clavero | Game Designer</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Estilo rápido integrado para no liarte con más archivos */
+        body { background: #0b0b0b; color: #fff; font-family: 'Inter', sans-serif; margin: 0; }
+        nav { background: #161616; padding: 1rem 10%; display: flex; justify-content: space-between; border-bottom: 2px solid #e30613; }
+        nav a { color: #fff; text-decoration: none; font-weight: bold; margin-left: 20px; text-transform: uppercase; font-size: 0.9rem; }
+        nav a:hover { color: #e30613; }
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .hero h1 { font-size: 4rem; margin: 0; }
+        .hero p { font-size: 1.5rem; color: #e30613; font-weight: bold; text-transform: uppercase; letter-spacing: 4px; }
+        .cta-btn { margin-top: 30px; padding: 15px 30px; background: #e30613; color: #fff; text-decoration: none; font-weight: bold; border-radius: 5px; }
     </style>
 </head>
 <body>
-
-<header>
-    <div class="container">
-        <div class="tagline">Technical Gameplay Designer</div>
-        <h1>[YOUR NAME]</h1>
-        <div class="contacts">
-            <a href="mailto:[YOUR_EMAIL]">Email</a>
-            <a href="[LINKEDIN_URL]">LinkedIn</a>
-            <a href="https://github.com/[YOUR_USER]">GitHub</a>
-            <a href="#">Spain (Willing to Relocate)</a>
+    <nav>
+        <div class="logo">MARIO GAVÍN</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="cv.html">Resume/CV</a>
         </div>
+    </nav>
+    <div class="hero">
+        <p>Technical Game Designer</p>
+        <h1>MARIO GAVÍN CLAVERO</h1>
+        <p style="color: #666; font-size: 1rem; letter-spacing: 1px;">Crafting immersive systems and engaging gameplay loops</p>
+        <a href="projects.html" class="cta-btn">View My Work</a>
     </div>
-</header>
-
-<div class="container">
-    
-    <section id="about">
-        <h2>Professional Summary</h2>
-        <div class="bio-text">
-            <p>I am a Gameplay Designer with a strong technical background in programming, focused on bridging the gap between creative vision and functional implementation. I specialize in designing systems that feel responsive and mechanics that enhance player agency.</p>
-            <p>Driven by the philosophy of "systems-first" design, I enjoy deconstructing complex RPG mechanics and rebuilding them into fluid, scalable code. My goal is to create immersive experiences where technical stability meets high-impact gameplay.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Core Competencies</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Technical Proficiencies</h3>
-                <ul class="skill-list">
-                    <li>Engine: [Unity / Unreal Engine 4 & 5]</li>
-                    <li>Languages: [C# / C++ / Python]</li>
-                    <li>Version Control: Git / GitHub</li>
-                    <li>Prototyping & Scripting</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Design Expertise</h3>
-                <ul class="skill-list">
-                    <li>Combat Systems & Balancing</li>
-                    <li>Player Controller & Game Feel</li>
-                    <li>Systemic RPG Design</li>
-                    <li>Technical Documentation</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Soft Skills</h3>
-                <ul class="skill-list">
-                    <li>English (Professional Proficiency)</li>
-                    <li>Collaborative Problem Solving</li>
-                    <li>Rapid Iteration Mindset</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Featured Projects</h2>
-
-        <div class="project-card">
-            <div class="project-header">
-                <div>
-                    <h3 class="project-title">[PROJECT NAME: E.g., Project Cyber-Strike]</h3>
-                    <div class="tech-tags">
-                        <span class="tag">C#</span>
-                        <span class="tag">Unity</span>
-                        <span class="tag">Systems Design</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-content">
-                <div class="project-description">
-                    <h4>The Challenge</h4>
-                    <p>Develop a cohesive [genre] experience in a team of [number] where the main focus was [main goal, e.g., verticality and fast-paced combat].</p>
-                </div>
-                <div class="project-description">
-                    <h4>My Contribution</h4>
-                    <p>Designed and implemented the <strong>Core Gameplay Loop</strong>, specifically the [specific system, e.g., character movement state machine]. I focused on reducing input latency to ensure a "snappy" feel, iterating on variables like acceleration and friction based on playtest feedback.</p>
-                </div>
-            </div>
-            <div style="margin-top: 20px;">
-                <a href="[VIDEO_OR_REPO_LINK]" style="color: var(--primary-accent); text-transform: uppercase; font-size: 0.8rem; font-weight: 700;">View Technical Breakdown ➔</a>
-            </div>
-        </div>
-        </section>
-
-    <section id="philosophy">
-        <h2>Why Gameplay Design?</h2>
-        <div class="bio-text">
-            <p>I believe that the best stories in games are told through their mechanics. Whether it's the weight of a sword swing or the complexity of a skill tree, every technical decision must serve the player's immersion. I am currently deep-diving into the design philosophies of open-world RPGs, studying how narrative-driven quests can be supported by robust, emergent gameplay systems.</p>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2026 [YOUR NAME] | Designed for the next generation of RPGs.
-    </footer>
-</div>
-
 </body>
 </html>

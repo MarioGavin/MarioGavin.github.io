@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>USJ Murder - Paper Prototyping | Mario Gavín Clavero</title>
+    <style>
+        body { background: #0b0b0b; color: #f0f0f0; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.7; }
+        nav { background: #161616; padding: 1rem 10%; display: flex; justify-content: space-between; border-bottom: 2px solid #e30613; }
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; text-transform: uppercase; font-size: 0.9rem; font-weight: bold; }
+        nav a:hover { color: #e30613; }
+        .container { max-width: 900px; margin: 0 auto; padding: 50px 20px; }
+        h1 { color: #fff; font-size: 3rem; margin-bottom: 10px; }
+        .role-tag { color: #e30613; font-weight: bold; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 30px; }
+        h2 { color: #e30613; border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 50px; }
+        h3 { color: #fff; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .highlight { background: #1a1a1a; padding: 15px; border-left: 4px solid #e30613; margin: 20px 0; font-style: italic; color: #ccc; }
+        .media-placeholder { background: #222; text-align: center; padding: 40px; border: 2px dashed #444; border-radius: 8px; color: #666; margin: 30px 0; }
+        .btn { display: inline-block; padding: 10px 20px; background: #e30613; color: #fff; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo" style="font-weight: bold;">MARIO GAVÍN</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="cv.html">Resume/CV</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>USJ Murder</h1>
+        <span class="role-tag">Core Game Designer</span>
+
+        <div class="media-container" style="text-align: center; margin: 30px 0;">
+            <img src="Resources/usjmurdertabletop.png" alt="USJ Murder Board Layout" style="width: 100%; max-width: 800px; border-radius: 8px; border: 1px solid #333;">
+            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">USJ Murder: Custom board for social deduction gameplay in a San Jorge University representation.</p>
+        </div>
+
+        <p><em>USJ Murder</em> is a tabletop game born from the desire to create a highly replayable social deduction experience. Heavily inspired by the mechanics of <em>Cluedo</em>, <em>Aye, Dark Overlord</em>, and <em>Among Us</em>, the game is set within the Universidad San Jorge, leaning into student stereotypes to fuel the narrative.</p>
+
+        <h2>Core Systems & The Gameplay Loop</h2>
+        <p>As a designer, I wanted the game to rely less on rigid dice-combat and more on emergent player improvisation. I structured the core logic into a strict, repeating three-phase loop: <strong>Board -> Debate -> Voting</strong>[cite: 291].</p>
+
+        <ul>
+            <li><strong>The Board Phase:</strong> Players navigate the map to collect Accusation and Excuse cards, while avoiding hazards and strategically positioning themselves in specific rooms.</li>
+            <li><strong>The Debate (Discussion) Phase:</strong> This is the mechanical heart of the game. A Detective card is revealed with a prompt. Players must construct a cohesive narrative to answer the question, but they are forced to integrate the random text/images from their hand of cards into their story[cite: 212]. This forces players to dynamically accuse and defend each other on the fly.</li>
+            <li><strong>The Voting Phase & Win/Loss Conditions:</strong> After the debate, a countdown triggers a simultaneous voting phase where players literally point at their prime suspect. The game relies on a tension-building elimination system: acquiring 3 suspicion points results in a loss.</li>
+        </ul>
+
+        <div class="highlight">
+            "By tying card-draws directly to narrative improvisation, no two games are ever the same. The systems generate the framework, but the players' psychology and creativity drive the actual gameplay."
+        </div>
+
+        <h2>Design Philosophy</h2>
+        <p>Working on a physical prototype honed my ability to balance rulesets without relying on an engine's physics or code. Every Event Card (which forces players into constraints like speaking with an accent or communicating only via signals) had to be meticulously playtested to ensure it disrupted the game in a fun, balanced way rather than breaking the core logic.</p>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="usjmurder.pdf" target="_blank" class="btn"> Read Game Rulebook</a>
+        </div>
+        
+    </div>
+</body>
+</html>s

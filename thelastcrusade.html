@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Last Crusade - Game Design | Mario Gavín Clavero</title>
+    <style>
+        body { background: #0b0b0b; color: #f0f0f0; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.7; }
+        nav { background: #161616; padding: 1rem 10%; display: flex; justify-content: space-between; border-bottom: 2px solid #e30613; }
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; text-transform: uppercase; font-size: 0.9rem; font-weight: bold; }
+        nav a:hover { color: #e30613; }
+        .container { max-width: 900px; margin: 0 auto; padding: 50px 20px; }
+        h1 { color: #fff; font-size: 3rem; margin-bottom: 10px; }
+        .role-tag { color: #e30613; font-weight: bold; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 30px; }
+        h2 { color: #e30613; border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 50px; }
+        h3 { color: #fff; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .highlight { background: #1a1a1a; padding: 15px; border-left: 4px solid #e30613; margin: 20px 0; font-style: italic; color: #ccc; }
+        .media-placeholder { background: #222; text-align: center; padding: 40px; border: 2px dashed #444; border-radius: 8px; color: #666; margin: 30px 0; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo" style="font-weight: bold;">MARIO GAVÍN</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="cv.html">Resume/CV</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>The Last Crusade</h1>
+        <span class="role-tag">Lead Game Designer & Level Designer</span>
+
+        <div class="media-container" style="text-align: center; margin: 30px 0;">
+            <video style="width: 100%; max-width: 800px; border-radius: 8px; border: 1px solid #333;" autoplay loop muted playsinline>
+                <source src="Resources/theLastCrusade.mp4" type="video/mp4">
+            </video>
+            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">Combat loop: Stamina management and real-time QTEs.</p>
+        </div>
+
+        <p><em>The Last Crusade</em> is a 2D top-down RPG that blends exploration with a highly tactical, high-stakes turn-based combat system. My core responsibility was to design the entire gameplay loop from the ground up: from the "rock-paper-scissors" stamina economy and QTE mechanics, to level design, enemy behavior, and the RPG stat-scaling architecture.</p>
+
+        <h2>The Combat System: A Deadly Standoff</h2>
+        <p>I designed the combat to simulate the tension of a quick-draw duel (often referred to as a "Pistolero" standoff). Encountering an enemy locks the player into a turn-based clash governed by two main resources: <strong>HP and Stamina</strong>. Losing reduces the player's HP to zero, sending them back to the last bonfire checkpoint. </p>
+        
+        <p>In every turn, both the player and the enemy must choose between three actions, creating a deep psychological loop:</p>
+
+        <ul>
+            <li><strong>Attack (The QTE Assault):</strong> Players input directional QTEs (WASD/Arrows). Successful inputs buff the attack and charge a devastating, unblockable Finisher (Spacebar) after 4 consecutive successes. <em>The Catch:</em> Attacking drains stamina rapidly, and the only way to disengage safely is by executing the Finisher.</li>
+            <li><strong>Defend (The Tactical Block):</strong> If expecting an attack, players must successfully execute QTEs to block, draining their own stamina. Failing the QTE or running out of stamina results in direct HP damage. 4 successful blocks charge a Counter-Finisher that halts the enemy's assault.</li>
+            <li><strong>Rest (High Risk, High Reward):</strong> Restores 33% of max stamina. However, resting leaves the entity completely vulnerable. If attacked while resting, the first incoming strike deals massive critical damage. This applies to enemies as well, rewarding players who can accurately predict enemy AI patterns.</li>
+        </ul>
+
+        <div class="highlight">
+            "The goal was to create a system where mindlessly mashing the attack button leads to certain death. Every action requires a deliberate calculation of the opponent's stamina pool and potential next move."
+        </div>
+
+        <h2>RPG Systems & Stat Scaling</h2>
+        <p>To provide meaningful progression, I designed a comprehensive stat system that players can upgrade at Bonfires using experience points (XP) gained from victories. I meticulously balanced how these stats interact with the core combat loop:</p>
+        <ul>
+            <li><strong>Strength:</strong> Increases the stamina cost for enemies trying to block your attacks. Certain heavy weapons scale directly with this stat.</li>
+            <li><strong>Dexterity:</strong> Reduces the stamina cost of your own attacks, allowing for longer combos. Scales with fast-paced weapons.</li>
+            <li><strong>Resistance:</strong> Reduces the stamina cost required to successfully block incoming enemy attacks.</li>
+            <li><strong>Luck:</strong> Increases critical hit probability. Critical hits not only deal more damage but also cost significantly more stamina for the enemy to block.</li>
+        </ul>
+
+        <h2>World & Level Design</h2>
+        <p>Beyond the combat mechanics, I was responsible for the world layout and encounter design. My approach focused on rewarding exploration:</p>
+        <ul>
+            <li><strong>Exploration & Loot:</strong> Designed the main pathways and hidden off-shoots. Players who venture off the beaten path are rewarded with chests containing unique weapons that alter their playstyle.</li>
+            <li><strong>Enemy Encounters:</strong> Carefully placed enemies and programmed distinct movement patterns and attack behaviors to challenge the player's mastery of the combat mechanics.</li>
+            <li><strong>Bonfire Mechanics:</strong> Placed strategic checkpoints (Bonfires) where players can restore HP/Stamina, spend skill points, and save the game, creating a classic "souls-like" tension during exploration.</li>
+        </ul>
+
+    </div>
+</body>
+</html>

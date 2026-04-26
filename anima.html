@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anima - Game Design | Mario Gavín Clavero</title>
+    <style>
+        body { background: #0b0b0b; color: #f0f0f0; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.7; }
+        nav { background: #161616; padding: 1rem 10%; display: flex; justify-content: space-between; border-bottom: 2px solid #e30613; }
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; text-transform: uppercase; font-size: 0.9rem; font-weight: bold; }
+        nav a:hover { color: #e30613; }
+        .container { max-width: 900px; margin: 0 auto; padding: 50px 20px; }
+        h1 { color: #fff; font-size: 3rem; margin-bottom: 10px; }
+        .role-tag { color: #e30613; font-weight: bold; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 30px; }
+        h2 { color: #e30613; border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 50px; }
+        h3 { color: #fff; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .highlight { background: #1a1a1a; padding: 15px; border-left: 4px solid #e30613; margin: 20px 0; font-style: italic; color: #ccc; }
+        .media-placeholder { background: #222; text-align: center; padding: 40px; border: 2px dashed #444; border-radius: 8px; color: #666; margin: 30px 0; }
+        .btn { display: inline-block; padding: 10px 20px; background: #e30613; color: #fff; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo" style="font-weight: bold;">MARIO GAVÍN</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="cv.html">Resume/CV</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Anima</h1>
+        <span class="role-tag">Game Designer, Level Designer & Narrative Co-Writer</span>
+
+        <div class="media-container" style="text-align: center; margin: 30px 0;">
+            <video style="width: 100%; max-width: 800px; border-radius: 8px; border: 1px solid #333;" autoplay loop muted playsinline>
+                <source src="Resources/animaTrailer.mp4" type="video/mp4">
+            </video>
+            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">Anima - Official Gameplay Trailer.</p>
+        </div>
+
+        <p><em>Anima</em> is a story-driven 2D platformer set in the fictional world of Yalos, ruled by six powerful Gods. The project won <strong>"Best Elevator Pitch"</strong> at the Universidad San Jorge GotY Gala. Working in a team of 5, my primary responsibility was designing the core systemic mechanics, crafting the level flow, and ensuring the narrative deeply intertwined with the gameplay.</p>
+
+        <a href="https://illegalstudios.itch.io/anima" target="_blank" class="btn">Play Game on Itch.io</a>
+
+        <h2>Core Design: The Aura Mechanic</h2>
+        <p>I wanted to create a mechanic that physically represented the protagonist's (Hylah, Goddess of Feelings) internal struggle. I conceptualized and designed <strong>The Aura</strong>, a dual-world system that acts as the foundational pillar for combat, exploration, and health management.</p>
+
+        <ul>
+            <li><strong>Ludonarrative Health System:</strong> The Aura acts as Hylah's health bar. Every time she takes damage, her dark Aura expands. If the darkness covers the entire screen, the player dies. Healing (collecting animas) shrinks the Aura back down.</li>
+            <li><strong>Dynamic Environment & Hidden Paths:</strong> Outside the Aura, the world is bright and peaceful. Inside the Aura, the world's dark truth is revealed. I designed the levels so that taking damage (expanding the Aura) is sometimes necessary to reveal hidden platforms, secret skull totems required to open doors, and deadly traps.</li>
+            <li><strong>Systemic Enemy Behavior:</strong> I designed the enemy AI logic to react to the Aura. Creatures like the <em>Wingaz Bird</em> or the <em>Gorod Rocks</em> are entirely peaceful in the light. However, if the player's expanding Aura touches them, they become corrupted and instantly transition into aggressive attack patterns.</li>
+        </ul>
+
+        <div class="highlight">
+            "The Aura creates a constant risk-reward loop: sustaining damage grants the player a wider field of view for puzzle-solving and platforming, but pushes them dangerously close to death and triggers nearby enemies."
+        </div>
+
+        <div class="media-container" style="text-align: center; margin: 30px 0;">
+            <img src="Resources/animaScreenshot.png" alt="Anima Aura Mechanic" style="width: 100%; max-width: 800px; border-radius: 8px; border: 1px solid #333;">
+            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">Dynamic Aura: Revealing hidden platforms and environmental storytelling.</p>
+        </div>
+
+        <h2>Level & Encounter Design</h2>
+        <p>I structured the game into three distinct pacing phases to keep the gameplay loop engaging:</p>
+        <ul>
+            <li><strong>Progress Levels:</strong> Focus on traversal, platforming, and managing the Aura to avoid turning peaceful creatures into hostile threats.</li>
+            <li><strong>Puzzle Levels (Time-Attack):</strong> I designed specific puzzle rooms where the Aura automatically grows over time. The player must race against the clock to find color-coded blocks (Yellow, Blue, Red) and place them on their corresponding platforms before the darkness consumes the screen.</li>
+            <li><strong>Boss Arenas:</strong> Designed the spatial layouts and encounter flow for the multi-phase battles against the other Gods, such as <em>Serfe, God of Elements</em>, who attacks with falling stalactites and defensive crystal walls.</li>
+        </ul>
+
+        <h2>Lore & Worldbuilding</h2>
+        <p>I co-wrote the narrative foundation to support the gameplay. The overarching goal is to liberate Yalos from the oppressive Gods (Body, Elements, Time, Nature, Reason). By making Hylah the Goddess of Feelings, the mechanic of the Aura directly reflects her journey: balancing sadness and hope to overcome physical obstacles.</p>
+
+        
+    </div>
+    <div style="margin-top: 30px; text-align: center;">
+    <a href="GuiaAnima.pdf" target="_blank" class="btn" style="background: #444;"> Read Full Game Design Document (in Spanish)</a>
+    </div>
+</body>
+</html>
