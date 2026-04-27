@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NekosmiCat Dealers - Systems Design | Mario Gavín Clavero</title>
     <style>
         body { background: #0b0b0b; color: #f0f0f0; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.7; }
@@ -40,17 +41,17 @@
             <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">In-game screenshot: Resource management and ship layout.</p>
         </div>
 
-        <p><em>NekosmiCat Dealers</em> is a mobile idle resource management game [cite: 23] where players build a criminal empire in space. Working on this project, I took full ownership of the <strong>System Design, Economy Balancing, and Monetization</strong>, while also programming the core financial logic and authoring the comprehensive Game Design Document (GDD).</p>
+        <p><em>NekosmiCat Dealers</em> is a mobile idle resource management game where players build a criminal empire in space. Working on this project, I took full ownership of the <strong>System Design, Economy Balancing, and Monetization</strong>, while also programming the core financial logic and authoring the comprehensive Game Design Document (GDD).</p>
 
         <h2>Lore & Progression Loop</h2>
-        <p>I wrote the foundational lore to drive player motivation: The protagonist was once the best in the industry until a harsh betrayal by a partner forced them to start from scratch. Accompanied only by a loyal Assistant [cite: 151], the player must progressively unlock and upgrade ship rooms [cite: 26] to reclaim their position at the top.</p>
+        <p>I wrote the foundational lore to drive player motivation: The protagonist was once the best in the industry until a harsh betrayal by a partner forced them to start from scratch. Accompanied only by a loyal Assistant, the player must progressively unlock and upgrade ship rooms to reclaim their position at the top.</p>
 
         <h2>Economy & Monetization Design</h2>
         <p>Balancing a management game requires rigorous math and psychological reward loops. I designed and programmed the entire economic infrastructure:</p>
         <ul>
-            <li><strong>Multi-Currency System:</strong> Designed a robust economy utilizing four main indicators: Money, Merchandise, Reputation, and Premium Gems[cite: 91].</li>
-            <li><strong>Room Architecture & Upgrades:</strong> Conceptualized the function of every room (e.g., Command Room, Bar, Crops, Casino, Hospital)[cite: 113, 114, 116, 117, 122]. I balanced the ROI (Return on Investment) for upgrading these rooms [cite: 68] versus saving resources for defensive measures.</li>
-            <li><strong>Monetization Integration:</strong> Designed ethical and engaging mobile monetization hooks, balancing free daily rewards with gem-based refresh systems for hiring workers[cite: 92, 96]. I also programmed the underlying codebase for these financial transactions.</li>
+            <li><strong>Multi-Currency System:</strong> Designed a robust economy utilizing four main indicators: Money, Merchandise, Reputation, and Premium Gems.</li>
+            <li><strong>Room Architecture & Upgrades:</strong> Conceptualized the function of every room (e.g., Command Room, Bar, Crops, Casino, Hospital). I balanced the ROI (Return on Investment) for upgrading these rooms versus saving resources for defensive measures.</li>
+            <li><strong>Monetization Integration:</strong> Designed ethical and engaging mobile monetization hooks, balancing free daily rewards with gem-based refresh systems for hiring workers. I also programmed the underlying codebase for these financial transactions.</li>
         </ul>
 
         <div class="highlight">
@@ -58,18 +59,18 @@
         </div>
 
         <h2>Systemic Worker Mechanics (The "Cats")</h2>
-        <p>To make the management aspect feel alive, I designed a deep simulation system for the cat workers, giving them distinct statistics and psychological states[cite: 163, 171]:</p>
+        <p>To make the management aspect feel alive, I designed a deep simulation system for the cat workers, giving them distinct statistics and psychological states:</p>
         <ul>
-            <li><strong>Dynamic Stats:</strong> Workers have specific health, happiness, and loyalty levels [cite: 171] which directly affect their productivity and salary demands[cite: 167, 169].</li>
-            <li><strong>Emergent Behaviors:</strong> If neglected, workers can become sick, depressed, or even turn into Rebels[cite: 172, 174]. The player must actively manage their well-being by building Bedrooms and Bathrooms[cite: 174].</li>
-            <li><strong>The Impostor Threat:</strong> I implemented a high-stakes social deduction mechanic where low loyalty can spawn an "Impostor" who will silently eliminate other workers until identified and fired by the player[cite: 176, 178].</li>
+            <li><strong>Dynamic Stats:</strong> Workers have specific health, happiness, and loyalty levels which directly affect their productivity and salary demands.</li>
+            <li><strong>Emergent Behaviors:</strong> If neglected, workers can become sick, depressed, or even turn into Rebels. The player must actively manage their well-being by building Bedrooms and Bathrooms.</li>
+            <li><strong>The Impostor Threat:</strong> I implemented a high-stakes social deduction mechanic where low loyalty can spawn an "Impostor" who will silently eliminate other workers until identified and fired by the player.</li>
         </ul>
 
         <h2>Dynamic Risk Events</h2>
-        <p>To disrupt the idle loop and keep players engaged, I designed random raid events[cite: 133]:</p>
+        <p>To disrupt the idle loop and keep players engaged, I designed random raid events:</p>
         <ul>
-            <li><strong>Police Raids:</strong> Players must react quickly to warning signals and manually close illegal operations (like the Casino or Crops) [cite: 116, 117, 137] before the police arrive to avoid heavy fines and confiscations[cite: 135, 139].</li>
-            <li><strong>Pirates & Meteor Rains:</strong> External threats require players to invest in passive defenses (Shields and Lasers) to prevent structural damage and economic losses[cite: 140, 142, 145, 146].</li>
+            <li><strong>Police Raids:</strong> Players must react quickly to warning signals and manually close illegal operations (like the Casino or Crops) before the police arrive to avoid heavy fines and confiscations.</li>
+            <li><strong>Pirates & Meteor Rains:</strong> External threats require players to invest in passive defenses (Shields and Lasers) to prevent structural damage and economic losses.</li>
         </ul>
 
         <div class="media-placeholder">
@@ -77,10 +78,10 @@
         </div>
         
         <h2>Technical Documentation</h2>
-        <p>Beyond design and programming, I authored the complete <strong>Game Design Document (GDD)</strong>. This document established clear pipelines, UI/UX flowcharts for the mobile drag-and-drop interface [cite: 72, 189], and the mathematical progression curve for all 10 ship levels[cite: 100], ensuring the entire team shared a unified vision.</p>
+        <p>Beyond design and programming, I authored the complete <strong>Game Design Document (GDD)</strong>. This document established clear pipelines, UI/UX flowcharts for the mobile drag-and-drop interface, and the mathematical progression curve for all 10 ship levels, ensuring the entire team shared a unified vision.</p>
 
         <div style="margin-top: 30px; text-align: center;">
-        <a href="NekosmiCat_Dealers_GDD.pdf" target="_blank" class="btn"> Read Full Game Design Document</a>
+        <a href="NekosmiCat_Dealers_GDD.pdf" target="_blank" rel="noopener noreferrer" class="btn"> Read Full Game Design Document</a>
 </div>
     </div>
 </body>
