@@ -4,31 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>USJ Murder - Paper Prototyping | Mario Gavín Clavero</title>
-    <style>
-        body { background: #0b0b0b; color: #f0f0f0; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.7; }
-        nav { background: #161616; padding: 1rem 10%; display: flex; justify-content: space-between; border-bottom: 2px solid #e30613; }
-        nav a { color: #fff; text-decoration: none; margin-left: 20px; text-transform: uppercase; font-size: 0.9rem; font-weight: bold; }
-        nav a:hover { color: #e30613; }
-        .container { max-width: 900px; margin: 0 auto; padding: 50px 20px; }
-        h1 { color: #fff; font-size: 3rem; margin-bottom: 10px; }
-        .role-tag { color: #e30613; font-weight: bold; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 30px; }
-        h2 { color: #e30613; border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 50px; }
-        h3 { color: #fff; margin-top: 30px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        .highlight { background: #1a1a1a; padding: 15px; border-left: 4px solid #e30613; margin: 20px 0; font-style: italic; color: #ccc; }
-        .media-placeholder { background: #222; text-align: center; padding: 40px; border: 2px dashed #444; border-radius: 8px; color: #666; margin: 30px 0; }
-        .btn { display: inline-block; padding: 10px 20px; background: #e30613; color: #fff; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <div class="logo" style="font-weight: bold;">MARIO GAVÍN</div>
-        <div>
+        <div class="logo">MARIO <span>GAVÍN</span></div>
+        <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a href="about.html">About Me</a>
-            <a href="cv.html">Resume/CV</a>
+            <a href="Resources/MARIO_GAVIN_CLAVERO_CV.pdf.png" target="_blank">Resume/CV</a>
         </div>
     </nav>
 
@@ -36,9 +21,9 @@
         <h1>USJ Murder</h1>
         <span class="role-tag">Core Game Designer</span>
 
-        <div class="media-container" style="text-align: center; margin: 30px 0;">
-            <img src="Resources/usjmurdertabletop.png" alt="USJ Murder Board Layout" style="width: 100%; max-width: 800px; border-radius: 8px; border: 1px solid #333;">
-            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">USJ Murder: Custom board for social deduction gameplay in a San Jorge University representation.</p>
+        <div class="media-container" style="text-align: center; margin: 40px 0;">
+            <img src="Resources/usjmurdertabletop.png" alt="USJ Murder Board Layout" style="width: 100%; border-radius: 4px;">
+            <p style="font-family: var(--font-tech); font-size: 0.9rem; color: var(--text-muted); margin-top: 15px; letter-spacing: 1px;">USJ Murder: Custom board for social deduction gameplay in a San Jorge University representation.</p>
         </div>
 
         <p><em>USJ Murder</em> is a tabletop game born from the desire to create a highly replayable social deduction experience. Heavily inspired by the mechanics of <em>Cluedo</em>, <em>Aye, Dark Overlord</em>, and <em>Among Us</em>, the game is set within the Universidad San Jorge, leaning into student stereotypes to fuel the narrative.</p>
@@ -59,10 +44,27 @@
         <h2>Design Philosophy</h2>
         <p>Working on a physical prototype honed my ability to balance rulesets without relying on an engine's physics or code. Every Event Card (which forces players into constraints like speaking with an accent or communicating only via signals) had to be meticulously playtested to ensure it disrupted the game in a fun, balanced way rather than breaking the core logic.</p>
 
-        <div style="margin-top: 30px; text-align: center;">
-            <a href="usjmurder.pdf" target="_blank" rel="noopener noreferrer" class="btn"> Read Game Rulebook</a>
+        <div style="margin-top: 50px; text-align: center; padding-top: 30px; border-top: 1px solid #333;">
+            <a href="usjmurder.pdf" target="_blank" rel="noopener noreferrer" class="btn">Read Game Rulebook</a>
         </div>
         
     </div>
+
+    <section id="contact" class="contact-footer">
+        <h2>GET IN TOUCH</h2>
+        <p>I am currently looking for internship opportunities and am ready to relocate. Feel free to reach out!</p>
+        
+        <div class="contact-links">
+            <a href="mailto:mariogavin10@gmail.com" class="contact-item">
+                <span class="icon">✉</span> mariogavin10@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/mario-gav%C3%ADn-180b50404/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <span class="icon">in</span> LinkedIn Profile
+            </a>
+            <span class="contact-item">
+                <span class="icon">📍</span> Zaragoza, Spain (Ready to relocate)
+            </span>
+        </div>
+    </section>
 </body>
 </html>

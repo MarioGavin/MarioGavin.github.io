@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resume | Mario Gavín Clavero</title>
-    <style>
-        body { background: #0b0b0b; color: #fff; font-family: 'Inter', sans-serif; margin: 0; text-align: center; }
-        nav { background: #161616; padding: 1rem 10%; display: flex; justify-content: space-between; border-bottom: 2px solid #e30613; text-align: left; }
-        nav a { color: #fff; text-decoration: none; margin-left: 20px; text-transform: uppercase; }
-        .container { padding: 100px 10%; }
-        .btn { padding: 20px 40px; background: #e30613; color: #fff; text-decoration: none; font-weight: bold; font-size: 1.2rem; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <div class="logo">MARIO GAVÍN</div>
-        <div>
+        <div class="logo">MARIO <span>GAVÍN</span></div>
+        <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a href="about.html">About Me</a>
-            <a href="cv.html">Resume/CV</a>
+            <a href="Resources/MARIO_GAVIN_CLAVERO_CV.pdf.png" target="_blank">Resume/CV</a>
         </div>
     </nav>
-    <div class="container">
-        <h1>Resume</h1>
-        <p>Click below to view or download my full professional CV in PDF format.</p>
-        <br><br>
-        <a href="Resources/MARIO_GAVÍN_CLAVERO_CV.pdf.png" class="btn">Download CV (PDF)</a>
-        <p style="margin-top: 50px; color: #666;">Contact: mariogavin10@gmail.com</p>
+
+    <div class="hero" style="height: 60vh;">
+        <h1 style="font-size: 4rem;">Resume</h1>
+        <p class="desc" style="margin-bottom: 40px;">Click below to view or download my full professional CV in PDF format.</p>
+        <a href="Resources/MARIO_GAVIN_CLAVERO_CV.pdf.png" target="_blank" rel="noopener noreferrer" class="btn">Download CV (PDF)</a>
     </div>
+
+    <section id="contact" class="contact-footer">
+        <h2>GET IN TOUCH</h2>
+        <p>I am currently looking for internship opportunities and am ready to relocate. Feel free to reach out!</p>
+        
+        <div class="contact-links">
+            <a href="mailto:mariogavin10@gmail.com" class="contact-item">
+                <span class="icon">✉</span> mariogavin10@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/mario-gav%C3%ADn-180b50404/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <span class="icon">in</span> LinkedIn Profile
+            </a>
+            <span class="contact-item">
+                <span class="icon">📍</span> Zaragoza, Spain (Ready to relocate)
+            </span>
+        </div>
+    </section>
 </body>
 </html>
